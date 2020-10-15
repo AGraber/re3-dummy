@@ -3349,7 +3349,7 @@ CMenuManager::LoadAllTextures()
 
 	for (int i = 0; i < ARRAY_SIZE(FrontendFilenames); i++) {
 		m_aFrontEndSprites[i].SetTexture(FrontendFilenames[i][0], FrontendFilenames[i][1]);
-		m_aFrontEndSprites[i].SetAddressing(rwTEXTUREADDRESSBORDER);
+		m_aFrontEndSprites[i].SetAddressing(rwTEXTUREADDRESSCLAMP);
 	}
 
 	int menuTxdSlot = CTxdStore::FindTxdSlot("menu");
@@ -3364,12 +3364,12 @@ CMenuManager::LoadAllTextures()
 
 	for (int i = 0; i < ARRAY_SIZE(MenuFilenames); i++) {
 		m_aMenuSprites[i].SetTexture(MenuFilenames[i][0], MenuFilenames[i][1]);
-		m_aMenuSprites[i].SetAddressing(rwTEXTUREADDRESSBORDER);
+		m_aMenuSprites[i].SetAddressing(rwTEXTUREADDRESSCLAMP);
 	}
 #ifdef MENU_MAP
 	for (int i = 0; i < ARRAY_SIZE(MapFilenames); i++) {
 		m_aMapSprites[i].SetTexture(MapFilenames[i][0], MapFilenames[i][1]);
-		m_aMapSprites[i].SetAddressing(rwTEXTUREADDRESSBORDER);
+		m_aMapSprites[i].SetAddressing(rwTEXTUREADDRESSCLAMP);
 	}
 #endif
 #ifdef GTA3_1_1_PATCH
